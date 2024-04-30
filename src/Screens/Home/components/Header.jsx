@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import Logo from "../../../assets/logo.png";
 function Header() {
+  const navigation = useNavigate();
   return (
     <div className="flex flex-row justify-between items-center shadow-lg p-4 border rounded-lg">
-      <button className="btn btn-primary btn-sm md:btn-md">+ Nova Idéia</button>
+      <button
+        className="btn btn-primary btn-sm md:btn-md"
+        onClick={() => navigation("/new")}
+      >
+        + Nova Idéia
+      </button>
       <h2 className="font-bold text-sm md:text-2xl">Top 50 idéias</h2>
       <div className="flex gap-2 items-center">
         <img
