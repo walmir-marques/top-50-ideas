@@ -61,7 +61,7 @@ function AddNewIdea() {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <span>Idéia cadastrada com sucesso!</span>
+          <span>Frase cadastrada com sucesso!</span>
         </div>
       )}
 
@@ -73,13 +73,13 @@ function AddNewIdea() {
         Back
       </button>
       <h2 className="font-bold text-2xl mt-5">
-        Do conceito a criação. Empodere a jornada da sua Startup.
+        Mostre para o mundo frases que te motivaram ou te fizeram refletir.
       </h2>
       <div className="flex flex-col mt-7 gap-2">
-        <label>Sua Idéia *</label>
+        <label>Sua Frase *</label>
         <textarea
           className="textarea textarea-bordered border-primary"
-          placeholder="Digite a sua idéia aqui ..."
+          placeholder="Digite a sua frase aqui ..."
           onChange={(e) => setIdea(e.target.value)}
           value={idea}
         ></textarea>

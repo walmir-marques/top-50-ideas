@@ -8,13 +8,13 @@ function Hero() {
   return (
     <div className="my-10 flex flex-col items-center">
       <h2 className="text-3xl font-bold text-center">
-        Top 50 idéias inovadoras para a sua próxima startup
+        Top frases motivacionais e inspiradoras para levar para a vida.
       </h2>
-      <h2 className="text-center my-3">
+      <h2 className="text-center my-3 flex gap-2">
         <strong className="text-secondary">
-          Deixe um like nas suas idéias favoritas.
+          Deixe um like nas suas frases favoritas.
         </strong>
-        Escreva a sua melhor idéia.
+        Escreva a sua melhor Frase / Pensamento.
       </h2>
       <div>
         <select
