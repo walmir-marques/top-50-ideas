@@ -1,13 +1,17 @@
+import { useContext } from "react";
+import HomeScreen from "./Screens/Home/HomeScreen";
+import ThemeContext from "./context/ThemeContext";
+
 const App = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="text-3xl font-bold">
-      <button className="btn">Button</button>
-      <button className="btn btn-neutral">Neutral</button>
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-secondary">Secondary</button>
-      <button className="btn btn-accent">Accent</button>
-      <button className="btn btn-ghost">Ghost</button>
-      <button className="btn btn-link">Link</button>
+    <div
+      className="flex flex-col items-cente p-4 md:p-10 h-screen"
+      data-theme={theme}
+    >
+      <div className="max-w-2xl w-full items-center mx-auto">
+        <HomeScreen />
+      </div>
     </div>
   );
 };
