@@ -1,6 +1,7 @@
 import { useContext } from "react";
-import HomeScreen from "./Screens/Home/HomeScreen";
 import ThemeContext from "./context/ThemeContext";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -10,7 +11,7 @@ const App = () => {
       data-theme={theme}
     >
       <div className="max-w-2xl w-full items-center mx-auto">
-        <HomeScreen />
+        <RouterProvider router={router} />
       </div>
     </div>
   );
